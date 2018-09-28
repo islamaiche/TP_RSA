@@ -72,13 +72,13 @@ void affiche_page(FILE *f,int page,int lig,int nl,int *nmt,int *nct){
         ligne++;
         printf("\n");
     }
-    printf("\n\n    nombre de caractères : %d /nombre de mots : %d / ligne de cette page : %d - %d / page : %d \n\n",nc,nm,ligne-20,ligne-1,page+1);
+    printf("\n\n    nombre de caractÃ¨res : %d /nombre de mots : %d / ligne de cette page : %d - %d / page : %d \n\n",nc,nm,ligne-20,ligne-1,page+1);
 }
 
 void display(){
     char next;
     int page=0,n,nl=nb_ligne();///nl :veux dire nombre de ligne
-    int nmt=0,nct=0;///nmt : veux dire nombre de mots totale / nct : veux dire nombre de caractéres totale
+    int nmt=0,nct=0;///nmt : veux dire nombre de mots totale / nct : veux dire nombre de caractÃ©res totale
     n=nl;
     FILE *f=fopen("forma_text.txt","r");
     while(nl>0){
@@ -89,7 +89,7 @@ void display(){
         system("pause");
         system(" cls ");
     }
-    printf("\n\n\n\n\n\n    information sur le text :\n       Nombre de caractères totale : %d\n       nombre de mots totale : %d\n       nombre de lignes totale : %d\n       nombre de pages totale : %d \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",nct,nmt,n,page);
+    printf("\n\n\n\n\n\n    information sur le text :\n       Nombre de caractÃ¨res totale : %d\n       nombre de mots totale : %d\n       nombre de lignes totale : %d\n       nombre de pages totale : %d \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",nct,nmt,n,page);
     system("pause");
     fclose(f);
 }
